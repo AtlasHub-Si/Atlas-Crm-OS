@@ -1,3 +1,8 @@
+> **Atlas-Crm-OS · AtlasHub.SI integration track** · [Atlas product context](ATLAS.md) · [Legal and support](LEGAL.md)  
+> Curated through [SergioMonteiro-Atlas](https://github.com/sergiomonteiro-atlas); derived from [melgarafael/DeskcommCRM](https://github.com/melgarafael/DeskcommCRM). Original authorship and [MIT license](LICENSE) remain in force. This is an Atlas **integration**, not a claim that the source software originated at AtlasHub.SI.
+
+---
+
 <div align="center">
 
 🇧🇷 Português · [🇺🇸 English](README.en.md) · [🇪🇸 Español](README.es.md)
