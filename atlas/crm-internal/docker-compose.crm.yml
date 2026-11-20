@@ -1,0 +1,16 @@
+# Override para rodar crm.atlashub.si atrás do Caddy Mestre da VPS (127.0.0.1:3000)
+# Uso:
+#   docker compose -f ../../docker-compose.prod.yml -f docker-compose.crm.yml --env-file .env up -d
+
+services:
+  app:
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      SIGNUP_MODE: ${SIGNUP_MODE:-so_convite}
+      NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-https://crm.atlashub.si}
+      NEXT_PUBLIC_ADMIN_URL: ${NEXT_PUBLIC_ADMIN_URL:-https://crm.atlashub.si}
+
+  # Desativa o Caddy embutido quando o proxy mestre (Caddyfile.master) já gerencia 80/443 na VPS
+  caddy:
+    profiles: ["caddy-disabled-behind-master"]

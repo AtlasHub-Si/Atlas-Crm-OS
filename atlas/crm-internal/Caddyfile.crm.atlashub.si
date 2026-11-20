@@ -1,0 +1,11 @@
+# Reverse proxy Caddy para crm.atlashub.si (CRM Interno do Grupo AtlasHub.SI)
+crm.atlashub.si {
+	encode gzip
+	route {
+		# Bloqueia webhook global do WAHA na internet pública (WAHA fala apenas na rede Docker interna)
+		@waha_global path /api/v1/webhooks/waha
+		respond @waha_global 403
+
+		reverse_proxy 127.0.0.1:3000
+	}
+}

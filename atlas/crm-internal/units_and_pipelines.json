@@ -1,0 +1,55 @@
+{
+  "crm_domain": "crm.atlashub.si",
+  "mode": "internal_multi_unit",
+  "signup_mode": "so_convite",
+  "units": [
+    {
+      "unit_code": "AtlasHub-Institutional",
+      "name": "AtlasHub.SI · Institucional & Enterprise B2B",
+      "pipelines": [
+        {
+          "name": "Enterprise-Partnerships",
+          "stages": ["Descoberta", "Diagnóstico", "Proposta", "Contrato", "Ganho (Liberar VIP/Lab)", "Perdido"]
+        }
+      ],
+      "default_offer_code": "mentorship_vip"
+    },
+    {
+      "unit_code": "AtlasClub-Commercial",
+      "name": "AtlasClub · Comunidade, Cursos & Mentorias (club.atlas-si.com)",
+      "pipelines": [
+        {
+          "name": "Club-Free-to-Pro",
+          "stages": ["Lead Free (PT/FR)", "Engajado", "Qualificado Pro", "Ganho (Liberar Campus)", "Renovação", "Cancelado"]
+        },
+        {
+          "name": "Paid-Courses-and-VIP",
+          "stages": ["Interessado", "Atendimento SDR", "Link Enviado (Hotmart/Whop/Pix)", "Pago (Provisionado)", "Reembolso/Revogado"]
+        }
+      ],
+      "default_offer_code": "club_premium"
+    },
+    {
+      "unit_code": "AtlasRadar-Media",
+      "name": "AtlasRadar & AtlasNews · Mídia & Patrocínios",
+      "pipelines": [
+        {
+          "name": "Media-Sponsorships",
+          "stages": ["Prospecção", "Mídia Kit Enviado", "Negociação", "Ativo", "Encerrado"]
+        }
+      ],
+      "default_offer_code": "club_free_pt"
+    },
+    {
+      "unit_code": "AtlasHarness-Projects",
+      "name": "Atlas-Harness & AtlasDesk · Projetos & Implementações",
+      "pipelines": [
+        {
+          "name": "Agentic-Implementations",
+          "stages": ["Qualificação Técnica", "Escopo & Arquitetura", "Proposta", "Em Implantação (Atlas Lab)", "Entregue"]
+        }
+      ],
+      "default_offer_code": "projects_lab"
+    }
+  ]
+}
